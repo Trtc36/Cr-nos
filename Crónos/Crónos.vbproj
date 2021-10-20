@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{84AED7A8-AD04-4C01-8CB7-DF5DA1C179F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Crónos.My.MyApplication</StartupObject>
+    <RootNamespace>Crónos</RootNamespace>
+    <AssemblyName>Crónos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\trtc3\OneDrive\Escritorio\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Crónos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Crónos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DATOS\LÓGICA\RECURSOS\Cronos.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6DC5AFCCEA8C66689624DEA9716FA325449A5B3C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Crónos_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DATOS\Conexion.vb" />
+    <Compile Include="DATOS\CPuesto.vb" />
+    <Compile Include="DATOS\CReconocimiento.vb" />
+    <Compile Include="DATOS\CUsuario.vb" />
+    <Compile Include="DATOS\CVenta.vb" />
+    <Compile Include="DATOS\CAgente.vb" />
+    <Compile Include="DATOS\CCapacitacion.vb" />
+    <Compile Include="DATOS\CCapacitacionEmpleado.vb" />
+    <Compile Include="DATOS\CCarrera.vb" />
+    <Compile Include="DATOS\CCategoria.vb" />
+    <Compile Include="DATOS\CCliente.vb" />
+    <Compile Include="DATOS\CCompra.vb" />
+    <Compile Include="DATOS\CDCompra.vb" />
+    <Compile Include="DATOS\CDesempeño.vb" />
+    <Compile Include="DATOS\CDVenta.vb" />
+    <Compile Include="DATOS\CEmpleado.vb" />
+    <Compile Include="DATOS\CHSueldos.vb" />
+    <Compile Include="DATOS\CIncidencia.vb" />
+    <Compile Include="DATOS\CMarca.vb" />
+    <Compile Include="DATOS\CModelo.vb" />
+    <Compile Include="DATOS\CPermiso.vb" />
+    <Compile Include="DATOS\CProducto.vb" />
+    <Compile Include="DATOS\CProveedor.vb" />
+    <Compile Include="DATOS\DS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\fAgente.vb" />
+    <Compile Include="DATOS\LÓGICA\fCapacitacion.vb" />
+    <Compile Include="DATOS\LÓGICA\fCarrera.vb" />
+    <Compile Include="DATOS\LÓGICA\fCategoria.vb" />
+    <Compile Include="DATOS\LÓGICA\fCEmpleado.vb" />
+    <Compile Include="DATOS\LÓGICA\fCliente.vb" />
+    <Compile Include="DATOS\LÓGICA\fCompra.vb" />
+    <Compile Include="DATOS\LÓGICA\fDCompra.vb" />
+    <Compile Include="DATOS\LÓGICA\fDesempeño.vb" />
+    <Compile Include="DATOS\LÓGICA\fDVenta.vb" />
+    <Compile Include="DATOS\LÓGICA\fEmpleado.vb" />
+    <Compile Include="DATOS\LÓGICA\fHSueldos.vb" />
+    <Compile Include="DATOS\LÓGICA\fIncidencia.vb" />
+    <Compile Include="DATOS\LÓGICA\fMarca.vb" />
+    <Compile Include="DATOS\LÓGICA\fModelo.vb" />
+    <Compile Include="DATOS\LÓGICA\fPermiso.vb" />
+    <Compile Include="DATOS\LÓGICA\fProducto.vb" />
+    <Compile Include="DATOS\LÓGICA\fProveedor.vb" />
+    <Compile Include="DATOS\LÓGICA\fPuesto.vb" />
+    <Compile Include="DATOS\LÓGICA\fReconocimiento.vb" />
+    <Compile Include="DATOS\LÓGICA\fUsuario.vb" />
+    <Compile Include="DATOS\LÓGICA\fVenta.vb" />
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\Crónos.Designer.vb">
+      <DependentUpon>Crónos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\Crónos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmHistorialSueldos.Designer.vb">
+      <DependentUpon>frmHistorialSueldos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmHistorialSueldos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmEmpleado.Designer.vb">
+      <DependentUpon>frmEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmAgente.Designer.vb">
+      <DependentUpon>frmAgente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmAgente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmCapacitacion.Designer.vb">
+      <DependentUpon>frmCapacitacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmCapacitacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmCapacitacionEmpleado.Designer.vb">
+      <DependentUpon>frmCapacitacionEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmCapacitacionEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmCarrera.Designer.vb">
+      <DependentUpon>frmCarrera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmCarrera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmCategoria.Designer.vb">
+      <DependentUpon>frmCategoria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmCategoria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmCliente.Designer.vb">
+      <DependentUpon>frmCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmCompra.Designer.vb">
+      <DependentUpon>frmCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmDesempeño.Designer.vb">
+      <DependentUpon>frmDesempeño.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmDesempeño.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmDetalleCompra.Designer.vb">
+      <DependentUpon>frmDetalleCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmDetalleCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmDetalleVenta.Designer.vb">
+      <DependentUpon>frmDetalleVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmDetalleVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmIncidencia.Designer.vb">
+      <DependentUpon>frmIncidencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmIncidencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmMarca.Designer.vb">
+      <DependentUpon>frmMarca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmMarca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmLogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmLogIn.Designer.vb">
+      <DependentUpon>frmLogIn.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmModelo.Designer.vb">
+      <DependentUpon>frmModelo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmModelo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmPermiso.Designer.vb">
+      <DependentUpon>frmPermiso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmPermiso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmProducto.Designer.vb">
+      <DependentUpon>frmProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmProveedor.Designer.vb">
+      <DependentUpon>frmProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmPuesto.Designer.vb">
+      <DependentUpon>frmPuesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmPuesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmReconocimiento.Designer.vb">
+      <DependentUpon>frmReconocimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmReconocimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmUsuario.Designer.vb">
+      <DependentUpon>frmUsuario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmVenta.Designer.vb">
+      <DependentUpon>frmVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DATOS\LÓGICA\PRESENTACÓN\frmVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\Crónos.resx">
+      <DependentUpon>Crónos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmHistorialSueldos.resx">
+      <DependentUpon>frmHistorialSueldos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmEmpleado.resx">
+      <DependentUpon>frmEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmAgente.resx">
+      <DependentUpon>frmAgente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmCapacitacion.resx">
+      <DependentUpon>frmCapacitacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmCapacitacionEmpleado.resx">
+      <DependentUpon>frmCapacitacionEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmCarrera.resx">
+      <DependentUpon>frmCarrera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmCategoria.resx">
+      <DependentUpon>frmCategoria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmCliente.resx">
+      <DependentUpon>frmCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmCompra.resx">
+      <DependentUpon>frmCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmDesempeño.resx">
+      <DependentUpon>frmDesempeño.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmDetalleCompra.resx">
+      <DependentUpon>frmDetalleCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmDetalleVenta.resx">
+      <DependentUpon>frmDetalleVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmIncidencia.resx">
+      <DependentUpon>frmIncidencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmMarca.resx">
+      <DependentUpon>frmMarca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmLogIn.resx">
+      <DependentUpon>frmLogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmModelo.resx">
+      <DependentUpon>frmModelo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmPermiso.resx">
+      <DependentUpon>frmPermiso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmProducto.resx">
+      <DependentUpon>frmProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmProveedor.resx">
+      <DependentUpon>frmProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmPuesto.resx">
+      <DependentUpon>frmPuesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmReconocimiento.resx">
+      <DependentUpon>frmReconocimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmUsuario.resx">
+      <DependentUpon>frmUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATOS\LÓGICA\PRESENTACÓN\frmVenta.resx">
+      <DependentUpon>frmVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DATOS\DS.xsc">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </None>
+    <None Include="DATOS\DS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DATOS\DS.xss">
+      <DependentUpon>DS.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DATOS\LÓGICA\RECURSOS\Cronos.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DATOS\LÓGICA\REPORTES\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
